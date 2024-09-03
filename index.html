@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="logo.png" alt="Dashboard Logo" class="logo">
+                <span class="logo-text">SIMS</span>
+            </div>
+            <ul>
+               
+                <li><a href="#profile" class="nav-link" data-section="profile"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#preferences" class="nav-link" data-section="preferences"><i class="fas fa-sliders-h"></i> Preferences</a></li>
+                <li><a href="#user-access-control" class="nav-link" data-section="user-access-control"><i class="fas fa-users-cog"></i> User Access Control</a></li>
+                <li><a href="#school-details" class="nav-link" data-section="school-details"><i class="fas fa-school"></i> School Details</a></li>
+                <li><a href="#signout" class="nav-link" data-section="signout"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="settings-container">
+                <!-- Profile Section -->
+                <section id="profile" class="section-content">
+                    <h2>Profile</h2>
+                    <div class="profile-content">
+                        <div class="personal-info">
+                            <h3>Personal Information</h3>
+                            <p>Name: Kent Daryl Jalaran</p>
+                            <p>Email: <a href="mailto:kentdaryljalaran.202100177@gmail.com">kentdaryljalaran.202100177@gmail.com</a></p>
+                        </div>
+                        <div class="change-password">
+                            <h3>Change Password</h3>
+                            <label for="current-password">Current Password:</label>
+                            <input type="password" id="current-password" placeholder="Enter current password">
+                            <label for="new-password">New Password:</label>
+                            <input type="password" id="new-password" placeholder="Enter new password">
+                            <button>Save Changes</button>
+                            <button>Forgot Password</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Preferences Section -->
+                <section id="preferences" class="section-content">
+                    <h2>Preferences</h2>
+                    <div class="preferences-content">
+                        <h3>Email Preferences</h3>
+                        <label>
+                            <input type="checkbox"> Receive newsletters
+                        </label>
+                        <label>
+                            <input type="checkbox"> Receive notifications
+                        </label>
+                        <h3>Theme</h3>
+                        <label>
+                            <input type="radio" name="theme" value="light" checked> Light
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" value="dark"> Dark
+                        </label>
+                    </div>
+                </section>
+                <!-- User Access Control Section -->
+                <section id="user-access-control" class="section-content">
+                    <h2>User Access Control</h2>
+                    <div class="user-access-content">
+                        <h3>Manage Team</h3>
+                        <p>Manage team members and roles.</p>
+                        <h3>Manage Permissions</h3>
+                        <p>Set and adjust permissions for different roles.</p>
+                    </div>
+                </section>
+                <!-- School Details Section -->
+                <section id="school-details" class="section-content">
+                    <h2>School Details</h2>
+                    <div class="school-details-content">
+                        <h3>School Information</h3>
+                        <p>School Name: St Peters College </p>
+                        <p>Address: Sabayle Iligan City</p>
+                        <h3>Contact Information</h3>
+                        <p>Phone: (123) 8123-4567. </p>
+                        <p>Email: <a href="mailto:info@examplehighschool.com">info@examplehighschool.com</a></p>
+                        <button>Delete Account</button>
+                    </div>
+                </section>
+                <!-- Settings Section -->
+                <section id="settings" class="section-content">
+                    <h2>Settings</h2>
+                    <!-- Settings content here -->
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

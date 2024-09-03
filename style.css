@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: maroon;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #8b0000;
+}
+
+.active-link {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.settings-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide all sections by default */
+.section-content {
+    display: none;
+}
+
+/* Show the active section */
+.section-content.active {
+    display: block;
+}
+
+/* Profile Section */
+.profile-content h3 {
+    margin-top: 20px;
+}
+
+.change-password input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.change-password button {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.change-password button:hover {
+    background-color: #8b0000;
+}
+
+/* Preferences Section */
+.preferences-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.preferences-content input[type="checkbox"],
+.preferences-content input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* User Access Control Section */
+.user-access-content h3 {
+    margin-top: 20px;
+}
+
+/* School Details Section */
+.school-details-content h3 {
+    margin-top: 20px;
+}
+
+.school-details-content button {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.school-details-content button:hover {
+    background-color: #8b0000;
+}
+
